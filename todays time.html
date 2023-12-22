@@ -4,61 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>todays time</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        flex-direction: column;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #000000;
-      }
-      .time {
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        font-size: 250px;
-        color: rgb(21, 42, 60);
-      }
-      .date {
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        font-size: 50px;
-        color: rgb(21, 42, 60);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1 class="time">2023/11/1</h1>
     <h4 class="date">2023/11/1</h4>
-
-    <script>
-      setInterval(function () {
-        document.querySelector(".time").textContent = new Intl.DateTimeFormat(
-          "fa-IR",
-          {
-            hour: "numeric",
-            minute: "numeric",
-            second: "numeric",
-          }
-        ).format(new Date());
-      }, 1);
-      setInterval(function () {
-        document.querySelector(".date").textContent = new Intl.DateTimeFormat(
-          "fa-IR",
-          {
-            weekday: "long",
-            year: "numeric",
-            day: "numeric",
-            month: "long",
-          }
-        ).format(new Date());
-      }, 1);
-    </script>
+    <script src="./js.js"></script>
   </body>
 </html>
