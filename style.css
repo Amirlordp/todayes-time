@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.5s;
 }
 
 body {
@@ -21,4 +22,20 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 50px;
   color: rgb(21, 42, 60);
+}
+.daynight {
+  position: relative;
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+.svg__moon {
+  display: none;
+}
+.svg__sun {
+  display: none;
+}
+.show {
+  display: block;
 }
